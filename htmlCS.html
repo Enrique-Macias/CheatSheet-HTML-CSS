@@ -8,100 +8,113 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/themes/prism-tomorrow.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/prism.min.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </head>
-<header>
-    <h1>HTML5 Cheat Sheet</h1>
-    <p>HTML5 is the latest version of HTML. It is designed to be easy to use and understand. This Cheat Sheet will teach you the basics of HTML5.</p>
-</header>
 <body>
+    <header>
+        <h1>HTML5 Cheat Sheet</h1>
+        <p>HTML5 is the latest version of HTML. It is designed to be easy to use and understand. This Cheat Sheet will teach you the basics of HTML5.</p>
+    </header>
     <div class="container">
         <div class="section-wide">
             <div class="section-header">
                 <h2>HTML5 Syntax</h2>
             </div>
-            <p>HTML5 is a language for describing web pages. HTML stands for Hyper Text Markup Language. 
-            A markup language is a set of markup tags. HTML documents are described by HTML tags. Each HTML tag describes different content.</p>
+            <div class="section-content">
+                <p>HTML5 is a language for describing web pages. HTML stands for Hyper Text Markup Language. 
+                A markup language is a set of markup tags. HTML documents are described by HTML tags. Each HTML tag describes different content.</p>
+            </div>
         </div>
-        <div class="section">
+        <div class="section-wide">
             <div class="section-header">
                 <h2>Basic HTML Structure</h2>
             </div>
-            <code>
-                &lt;!DOCTYPE html&gt;<br>
-                &lt;html&gt;<br>
-                &lt;head&gt;<br>
-                &lt;title&gt;Page Title&lt;/title&gt;<br>
-                &lt;/head&gt;<br>
-                &lt;body&gt;<br>
-                &lt;h1&gt;This is a Heading&lt;/h1&gt;<br>
-                &lt;p&gt;This is a paragraph.&lt;/p&gt;<br>
-                &lt;/body&gt;<br>
-                &lt;/html&gt;
-            </code>
+            <div class="section-content">
+                <pre><code class="language-html">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+    &lt;head&gt;
+        &lt;title&gt;Page Title&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;h1&gt;This is a Heading&lt;/h1&gt;
+        &lt;p&gt;This is a paragraph.&lt;/p&gt;
+    &lt;/body&gt;
+&lt;/html&gt;
+                </code></pre>
+            </div>
         </div>
-        <div class="section">
+        <div class="section-wide">
             <div class="section-header">
                 <h2>Common Tags</h2>
             </div>
-            <code>
-                &lt;h?&gt; - Heading (h1-h6)<br>
-                &lt;p&gt; - Paragraph<br>
-                &lt;strong&gt; - Bold<br>
-                &lt;em&gt; - Italic<br>
-                &lt;a href="url"&gt; - Hyperlink<br>
-                &lt;img src="url" alt="description"&gt; - Image<br>
-                &lt;ul&gt; - Unordered List<br>
-                &lt;ol&gt; - Ordered List<br>
-                &lt;li&gt; - List Item<br>
-                &lt;br&gt; - Line Break<br>
-            </code>
+            <div class="section-content">
+                <pre><code class="language-html">
+&lt;h1&gt; - Heading (h1-h6)
+&lt;p&gt; - Paragraph
+&lt;strong&gt; - Bold
+&lt;em&gt; - Italic
+&lt;a href="url"&gt; - Hyperlink
+&lt;img src="url" alt="description"&gt; - Image
+&lt;ul&gt; - Unordered List
+&lt;ol&gt; - Ordered List
+&lt;li&gt; - List Item
+&lt;br&gt; - Line Break
+                </code></pre>
+            </div>
         </div>
-        <div class="section">
+        <div class="section-wide">
             <div class="section-header">
                 <h2>Section Divisions</h2>
             </div>
-            <code>
-                &lt;div&gt; - Division<br>
-                &lt;header&gt; - Header<br>
-                &lt;nav&gt; - Navigation<br>
-                &lt;section&gt; - Section<br>
-                &lt;article&gt; - Article<br>
-                &lt;aside&gt; - Aside<br>
-                &lt;footer&gt; - Footer<br>
-                &lt;span&gt; - Inline Section<br>
-            </code>
+            <div class="section-content">
+                <pre><code class="language-html">
+&lt;div&gt; - Division
+&lt;header&gt; - Header
+&lt;nav&gt; - Navigation
+&lt;section&gt; - Section
+&lt;article&gt; - Article
+&lt;aside&gt; - Aside
+&lt;footer&gt; - Footer
+&lt;span&gt; - Inline Section
+                </code></pre>
+            </div>
         </div>
-        <div class="section">
+        <div class="section-wide">
             <div class="section-header">
                 <h2>Tables</h2>
             </div>            
-            <code>
-                &lt;table&gt; - Define a Table<br>
-                &lt;tr&gt; - Table Row<br>
-                &lt;th&gt; - Table Header<br>
-                &lt;td&gt; - Table Data<br>
-            </code>
+            <div class="section-content">
+                <pre><code class="language-html">
+&lt;table&gt; - Define a Table
+&lt;tr&gt; - Table Row
+&lt;th&gt; - Table Header
+&lt;td&gt; - Table Data
+                </code></pre>
+            </div>
         </div>
         <div class="section-wide">
             <div class="section-header">
                 <h2>Miscellaneous Tags</h2>
             </div>
-            <code>
-                &lt;!-- This is a comment --&gt; - Comment<br>
-                &lt;!DOCTYPE html&gt; - Document Type Declaration<br>
-                &lt;meta&gt; - Metadata information tag<br>
-            </code>
+            <div class="section-content">
+                <pre><code class="language-html">
+&lt;!-- This is a comment --&gt; - Comment
+&lt;!DOCTYPE html&gt; - Document Type Declaration
+&lt;meta&gt; - Metadata information tag
+                </code></pre>
+            </div>
         </div>
     </div>
+    <footer>
+        <p class="name">Created by Enrique Macias</p>
+        <p><a href="https://github.com/Enrique-Macias" target="_blank">
+            <ion-icon name="logo-github"></ion-icon>
+        </a></p>
+        <p>Follow Me!</p>
+    </footer>
 </body>
-<footer>
-    <p class="name">Created by Enrique Macias</p>
-    <p><a href="https://github.com/Enrique-Macias" target="_blank">
-        <ion-icon name="logo-github"></ion-icon>
-    </a></p>
-    <p>Follow Me!</p>
-
-</footer>
 </html>
