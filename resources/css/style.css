@@ -28,14 +28,14 @@ p {
     padding: 20px 50px;
 }
 
-.section, .section-wide {
+.section, .section-wide, .section-wider {
     background-color: #EEEEEE;
     border-radius: 5px;
     overflow: hidden;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-.section-wide p {
+.section-wider p {
     font-size: 18px;
 }
 
@@ -64,6 +64,10 @@ p {
 
 .section-wide {
     grid-column: span 2;
+}
+
+.section-wider {
+    grid-column: span 4;
 }
 
 .section-content {
